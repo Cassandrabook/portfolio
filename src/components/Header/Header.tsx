@@ -7,9 +7,9 @@ export function Header(){
     return(
         <>
             <section className="portfolio">
-                <p className="portfolio__name">Cassandra Book</p>
+                <h1 className="portfolio__name slide-right">Cassandra Book</h1>
                 <div className="portfolio__picture"></div>
-                <p className="portfolio__webb">Webb developer student</p>
+                <p className="portfolio__webb slide-right">Webb developer student</p>
             </section>
             
         </>

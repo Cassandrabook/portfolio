@@ -1,6 +1,8 @@
 @use './../../styling/colors' as c;
 @use './../../styling/variables' as v;
 @use './../../styling/breakpoints' as b;
+@use './../../styling/mixins' as m;
+@use './../../styling/fonts' as f;
 
 .portfolio{
     display: flex;
@@ -13,8 +15,9 @@
         position: absolute;
         z-index: 2;
         font-size: 120px;
-        top: 80px;
+        top: 93px;
         font-family: 'Lora', serif;
+        font-weight: lighter;
     }
 
     &__picture{
@@ -40,3 +43,5 @@
         color: c.$my-pop-color;
     }
 }
+
+@include m.text-slider;

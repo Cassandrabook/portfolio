@@ -1,6 +1,8 @@
 @use './../../styling/colors' as c;
 @use './../../styling/variables' as v;
 @use './../../styling/breakpoints' as b;
+@use './../../styling/fonts' as f;
+@use './../../styling/mixins' as m;
 
 .about{
     color: c.$text-color;
@@ -8,12 +10,12 @@
     &__title{
         margin: 0 auto;
         text-align: center;
-        font-size: 60px;
-        border-bottom: 2px solid c.$my-pop-color;
+        font-size: f.$heading-font-size-smal;
+        border-bottom: c.$underline-styling;
         max-width: 320px;
 
         @include b.medium{
-            font-size: 90px;
+            font-size: f.$heading-font-size-large;
             max-width: 550px;
         }
     }
@@ -35,18 +37,7 @@
     }
 
     &__image{
-        background-image: url(./../../assets/CV-bild.jpg);
-        background-position:top;
-        background-size: cover;
-        width: 300px;
-        height: 300px;
-        border-radius: 50%;
-        transition: all ease 0.5s;
-
-        @include b.medium{
-            width: 400px;
-            height: 400px;
-        }
+        @include m.about-picture;
     }
 
     &__image:hover{
@@ -60,10 +51,11 @@
     &__text-container{
         p{
             text-align: center;
+            font-size: f.$paragraph-font-size-smal;
 
             @include b.medium{
                 max-width: 600px;
-                font-size: 18px;
+                font-size: f.$paragraph-font-size-large;
                 text-align: left;
             }
         }

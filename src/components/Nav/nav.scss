@@ -17,14 +17,15 @@
             list-style: none;
             text-decoration: none;  
             color: c.$text-color;
-            transition: all ease 3ms;
+            transition: all ease 0.3s;
         }
         a{
             text-decoration: none;
-        }
+        }   
     }
 
     &__content:hover{
         color: c.$my-pop-color;
+        font-size: 22px;
     }
 }

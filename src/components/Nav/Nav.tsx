@@ -9,7 +9,7 @@ export function Navmenu() {
                 <nav className="navbar__container">
                     <ul className="navbar__menu">
                         <a href="#"><li className="navbar__content">Home</li></a>
-                        <a href="#"><li className="navbar__content">About</li></a>
+                        <a href="#about"><li className="navbar__content">About</li></a>
                         <a href="#"><li className="navbar__content">Projects</li></a>
                         <a href="#"><li className="navbar__content">Contact</li></a>
                     </ul>
