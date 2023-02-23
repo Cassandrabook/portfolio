@@ -1,0 +1,71 @@
+@use './../../styling/colors' as c;
+@use './../../styling/variables' as v;
+@use './../../styling/breakpoints' as b;
+
+.about{
+    color: c.$text-color;
+
+    &__title{
+        margin: 0 auto;
+        text-align: center;
+        font-size: 60px;
+        border-bottom: 2px solid c.$my-pop-color;
+        max-width: 320px;
+
+        @include b.medium{
+            font-size: 90px;
+            max-width: 550px;
+        }
+    }
+
+    &__container{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 1rem;
+        gap: 20px;
+
+        @include b.medium{
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 60px;
+            margin: 5rem;
+        }   
+    }
+
+    &__image{
+        background-image: url(./../../assets/CV-bild.jpg);
+        background-position:top;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        transition: all ease 0.5s;
+
+        @include b.medium{
+            width: 400px;
+            height: 400px;
+        }
+    }
+
+    &__image:hover{
+        @include b.medium{
+            box-shadow: 0px 0px 50px rgba(180, 180, 180, 0.745);
+            width: 420px;
+            height: 420px;
+        }
+    }
+
+    &__text-container{
+        p{
+            text-align: center;
+
+            @include b.medium{
+                max-width: 600px;
+                font-size: 18px;
+                text-align: left;
+            }
+        }
+    }
+}

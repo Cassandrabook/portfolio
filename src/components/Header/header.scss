@@ -1,14 +1,13 @@
 @use './../../styling/colors' as c;
 @use './../../styling/variables' as v;
+@use './../../styling/breakpoints' as b;
 
 .portfolio{
-    // position: relative;
-    
     display: flex;
     justify-content: center;
     align-items: center;
     color: c.$text-color;
-    
+    height: 90vh;
 
     &__name{
         position: absolute;
@@ -22,7 +21,7 @@
         background-image: v.$header-pic;
         background-position: center;
         background-size: cover;
-        box-shadow: c.$box-shadow;
+        box-shadow: c.$image-shadow;
         height: 300px;
         width: 480px;
         transform: v.$pic-rotate;

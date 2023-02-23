@@ -1,5 +1,6 @@
 @use './../../styling/colors' as c;
 @use './../../styling/variables' as v;
+@use './../../styling/breakpoints' as b;
 
 .navbar{
     width: 100%;
