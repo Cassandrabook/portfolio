@@ -1,0 +1,43 @@
+@use './../../styling/colors' as c;
+@use './../../styling/variables' as v;
+
+.portfolio{
+    // position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: c.$text-color;
+    
+
+    &__name{
+        position: absolute;
+        z-index: 2;
+        font-size: 120px;
+        top: 80px;
+        font-family: 'Lora', serif;
+    }
+
+    &__picture{
+        background-image: v.$header-pic;
+        background-position: center;
+        background-size: cover;
+        box-shadow: c.$box-shadow;
+        height: 300px;
+        width: 480px;
+        transform: v.$pic-rotate;
+        position: absolute;
+        z-index: 1;
+        top: 460px;
+    }
+
+    &__webb{
+        position: absolute;
+        z-index: 2;
+        font-size: 45px;
+        text-transform:uppercase;
+        top: 556px;
+        font-family: 'Raleway', sans-serif;
+        color: c.$my-pop-color;
+    }
+}
