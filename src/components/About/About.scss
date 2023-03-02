@@ -6,6 +6,7 @@
 
 .about{
     color: c.$text-color;
+    padding-bottom: 4em;
 
     &__title{
         margin: 0 auto;
@@ -13,6 +14,7 @@
         font-size: f.$heading-font-size-smal;
         border-bottom: c.$underline-styling;
         max-width: 320px;
+        font-family: 'Lora', serif;
 
         @include b.medium{
             font-size: f.$heading-font-size-large;
@@ -52,6 +54,8 @@
         p{
             text-align: center;
             font-size: f.$paragraph-font-size-smal;
+            line-height:1.7rem;
+            
 
             @include b.medium{
                 max-width: 600px;

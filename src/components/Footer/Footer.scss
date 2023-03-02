@@ -29,7 +29,7 @@
     }
 
     &__skills{
-
+        
         ul{
             columns: 2;
             -webkit-columns: 2;
@@ -49,21 +49,19 @@
         @include m.list-bullets;
     }
 
-    &__connect{
+    .container{
+        display: flex;
+        align-items: center;
+        gap: 10px;
         
-
-        .container{
-            display: flex;
-            align-items: center;
-            gap: 10px;
-
-            .git, .insta{
-                font-size: 40px;
-            }
-            .linkedin{
-                font-size: 52px;
-            }
+        a{
+            color: white;
         }
-        
-    }
+        .git, .insta{
+            font-size: 40px;
+        }
+        .linkedin{
+            font-size: 52px;
+        }
+    }   
 }

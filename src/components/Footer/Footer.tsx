@@ -29,9 +29,9 @@ export const Footer = () => {
                 <div className='footer__connect'>
                     <h3>Connect</h3>
                     <div className='container'>
-                        <span className='git'><VscGithub/></span>
-                        <span className='linkedin'><CiLinkedin /></span>
-                        <span className='insta'><SlSocialInstagram /></span>
+                        <a href="https://github.com/Cassandrabook" className='git'><VscGithub/></a>
+                        <a href="https://www.linkedin.com/in/cassandra-book-44241344/" className='linkedin'><CiLinkedin /></a>
+                        <a href="https://www.instagram.com/cassandrabook/" className='insta'><SlSocialInstagram /></a>
                     </div>
                 </div>
             </section>

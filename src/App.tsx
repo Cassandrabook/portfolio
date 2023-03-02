@@ -1,4 +1,5 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
 import './App.scss';
 import { About } from './components/About/About';
 import { Footer } from './components/Footer/Footer';
@@ -12,8 +13,7 @@ function App() {
         <Navmenu />
       </header>
       <main>
-        <Header />
-        <About />
+        <Outlet/>
       </main>
       <footer>
         <Footer />

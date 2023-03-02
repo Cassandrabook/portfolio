@@ -10,7 +10,7 @@
 
     @keyframes slideRight{
         0%{
-            transform: translate(-200px);
+            transform: translate(-600px);
             opacity: 0;
         }
         50%{
@@ -47,4 +47,9 @@
         width: 1em;
         margin-left: -1em
     }
+}
+
+@mixin bg-img-position {
+    background-position: center;
+    background-size: cover;
 }
