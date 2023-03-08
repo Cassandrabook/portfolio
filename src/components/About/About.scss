@@ -14,8 +14,7 @@
         font-size: f.$heading-font-size-smal;
         border-bottom: c.$underline-styling;
         max-width: 320px;
-        font-family: 'Lora', serif;
-
+        
         @include b.medium{
             font-size: f.$heading-font-size-large;
             max-width: 550px;

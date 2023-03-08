@@ -1,0 +1,63 @@
+@use './../../styling/colors' as c;
+@use './../../styling/variables' as v;
+@use './../../styling/breakpoints' as b;
+@use './../../styling/mixins' as m;
+@use './../../styling/fonts' as f;
+
+.portfolio{
+    height: 95vh;
+    color: c.$text-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__name{
+        position: absolute;
+        z-index: 2;
+        font-family: 'Lora', serif;
+        font-weight: lighter;
+        font-size: f.$heading-font-size-smal;
+        top: 130px;
+
+        @include b.medium{
+            font-size: f.$heading-font-size-large;
+            top: 93px;
+        }
+    }
+
+    &__picture{
+        background-image: v.$header-pic;
+        background-position: center;
+        background-size: cover;
+        box-shadow: c.$image-shadow;
+        height: 250px;
+        width: 350px;
+        position: absolute;
+        z-index: 1;
+        top: 260px;
+
+        @include b.medium {
+            height: 300px;
+            width: 480px;
+            top: 460px;
+            transform: v.$pic-rotate;
+            border-radius: 0;
+        }
+    }
+
+    &__webb{
+        position: absolute;
+        z-index: 2;
+        font-size: f.$education-size-smal;
+        text-transform: uppercase;
+        top: 520px;
+        color: c.$my-pop-color;
+
+        @include b.medium {
+            top: 556px;
+            font-size: f.$education-size-large;
+        }
+    }
+}
+
+@include m.text-slider;
