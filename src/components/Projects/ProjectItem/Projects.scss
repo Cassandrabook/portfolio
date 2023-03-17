@@ -1,0 +1,59 @@
+@use "./../../../styling/colors" as c;
+@use "./../../../styling/variables" as v;
+@use "./../../../styling/breakpoints" as b;
+@use "./../../../styling/fonts" as f;
+@use "./../../../styling/mixins" as m;
+
+.project-title {
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  font-size: f.$heading-font-size-large;
+  border-bottom: c.$underline-styling;
+  width: 700px;
+  margin-bottom: 150px;
+}
+
+.project {
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+
+  &__name {
+    font-size: 40px;
+    margin: 0;
+  }
+
+  &__imgContainer {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    width: 50%;
+    margin: 4rem 0px;
+
+    &__img {
+      height: 400px;
+    }
+  }
+
+  &__btn {
+    padding: 20px;
+    border-radius: 30px;
+    font-size: 17px;
+    background-color: black;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: all ease 0.5s;
+    color: white;
+  }
+
+  &__btn:hover {
+    color: c.$my-pop-color;
+    font-size: 18px;
+    border: 1px solid c.$my-pop-color;
+  }
+}
