@@ -2,9 +2,15 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 import "./Projects.scss";
 import "./sliderArrow.scss";
-import { projects } from "../../../models/project";
+import { projects } from "../../../../models/project";
+import { useNavigate } from "react-router-dom";
 
 export const ProjectItem = () => {
+  const navigate = useNavigate();
+  const toProjects = () => {
+    navigate(`/projects`);
+  };
+
   let ProjectHtml = projects.projects.map((project, i) => {
     return (
       <div className="project" key={project.id}>
@@ -21,7 +27,9 @@ export const ProjectItem = () => {
             alt={project.name}
           />
         </div>
-        <button className="project__btn">Read more</button>
+        <button onClick={toProjects} className="project__btn">
+          Read more
+        </button>
       </div>
     );
   });

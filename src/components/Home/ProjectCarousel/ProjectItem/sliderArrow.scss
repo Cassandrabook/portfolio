@@ -1,8 +1,8 @@
-@use "./../../../styling/colors" as c;
-@use "./../../../styling/variables" as v;
-@use "./../../../styling/breakpoints" as b;
-@use "./../../../styling/fonts" as f;
-@use "./../../../styling/mixins" as m;
+@use "./../../../../styling/colors" as c;
+@use "./../../../../styling/variables" as v;
+@use "./../../../../styling/breakpoints" as b;
+@use "./../../../../styling/fonts" as f;
+@use "./../../../../styling/mixins" as m;
 
 .carousel .control-next.control-arrow:before {
   border-left: 15px solid c.$my-pop-color;

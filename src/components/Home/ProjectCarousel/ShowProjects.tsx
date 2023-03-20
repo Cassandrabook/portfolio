@@ -1,5 +1,5 @@
 import { createContext, useState } from "react";
-import { IProjects, projects } from "../../models/project";
+import { IProjects, projects } from "../../../models/project";
 import { ProjectItem } from "./ProjectItem/ProjectItem";
 
 export const ShowProjects = () => {

@@ -5,6 +5,8 @@ import zooMob from "./../assets/webbshop-mobil-2.svg";
 import movieWebb from "./../assets/Webbshop3.svg";
 import doneDesignMob from "./../assets/webbshop-mobil-5.svg";
 import doneDesignWebb from "./../assets/Webbshop5.svg";
+import restaurantMob from "./../assets/restaurant-mobil.svg";
+import restaurantWebb from "./../assets/restaurant.svg";
 
 export interface IProject {
   id: number;
@@ -49,15 +51,15 @@ export const projects: IProjects = {
     },
     {
       id: 4,
-      name: "Restaurant",
+      name: "76 Gastronome",
       description: "API Movies omdb",
-      imgWebb: movieWebb,
-      imgMob: zooMob,
-      repo: "https://github.com/Cassandrabook/movie-webbshop",
+      imgWebb: restaurantWebb,
+      imgMob: restaurantMob,
+      repo: "https://github.com/idadanielsson/Restaurant",
     },
     {
       id: 5,
-      name: "Done Design",
+      name: "Given Design",
       description:
         "Detta var vår första inlämningsuppgift i Frontendutvecklingskursen, där vi  skulle återskapa och likna en färdig design utifrån endast bilder. Uppgiften gick ut på att visa våra kunskaper i HTML och CSS.",
       imgWebb: doneDesignWebb,
