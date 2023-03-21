@@ -1,51 +1,76 @@
 @use "./../../../../styling/colors" as c;
-@use "./../../../../styling/variables" as v;
-@use "./../../../../styling/breakpoints" as b;
+@use "./../../../../styling/breakpoint" as b;
 @use "./../../../../styling/fonts" as f;
 @use "./../../../../styling/mixins" as m;
+@use "./../../../../styling/buttons" as btn;
 
 .project-title {
   margin: 0 auto;
   color: c.$text-color;
   text-align: center;
-  font-size: f.$heading-large;
+  font-size: f.$h2-small;
   border-bottom: c.$underline-styling;
-  width: 700px;
-  margin-bottom: 150px;
+  width: 350px;
+  margin-bottom: 50px;
+
+  @include b.medium {
+    font-size: f.$h2-large;
+    width: 600px;
+    margin-bottom: 150px;
+  }
 }
 
 .project {
   color: c.$text-color;
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
+  margin: 0 auto;
+
+  @include b.medium {
+    justify-content: center;
+    width: 100%;
+  }
 
   &__name {
-    font-size: 40px;
+    font-size: f.$projects-title-small;
     margin: 0;
+
+    @include b.medium {
+      font-size: f.$projects-title-large;
+    }
   }
 
   &__imgContainer {
     display: flex;
-    gap: 100px;
+    flex-direction: column;
+    gap: 30px;
     justify-content: center;
-    width: 50%;
-    margin: 4rem 0px;
+    width: 70%;
+    margin: 40px;
+
+    @include b.medium {
+      flex-direction: row;
+      gap: 100px;
+      width: 50%;
+      margin: 4rem 0px;
+    }
 
     &__img {
-      height: 400px;
+      height: 200px;
+      @include b.medium {
+        height: 400px;
+      }
     }
   }
 
   &__btn {
-    @include m.button;
+    @include btn.button;
     padding: 20px;
-    font-size: 17px;
     background-color: c.$background-color;
   }
 
-  @include m.button-hover;
+  @include btn.button-hover;
 }

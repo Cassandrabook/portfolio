@@ -1,33 +1,56 @@
 @use "./../../styling/colors" as c;
-@use "./../../styling/variables" as v;
-@use "./../../styling/breakpoints" as b;
+@use "./../../styling/breakpoint" as b;
 @use "./../../styling/fonts" as f;
 @use "./../../styling/mixins" as m;
+@use "./../../styling/buttons" as btn;
 
 .myProjects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 80px;
+
+  @include b.medium {
+    padding: 3rem;
+  }
+
   &__title {
     color: c.$text-color;
-    font-size: f.$h2-title-smal;
+    font-size: f.$h2-small;
+    border-bottom: c.$underline-styling;
+    width: 350px;
+    margin: 0;
+    text-align: center;
+
+    @include b.medium {
+      font-size: f.$h2-large;
+      width: 600px;
+    }
   }
+
   &__projects {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(1, 1fr);
     color: c.$text-color;
-    gap: 50px;
-    margin: 4rem;
+    gap: 30px;
+    width: 100%;
+
+    @include b.medium {
+      grid-template-columns: repeat(4, 1fr);
+    }
 
     &__container {
       display: flex;
       flex-direction: column;
       align-items: center;
       background-color: c.$grey-color;
-      padding: 2rem 10px;
+      padding: 2rem 5px;
       gap: 20px;
-      width: 100%;
 
       &__name {
         margin: 0;
-        font-size: 23px;
+        font-size: f.$projectCard-name-large;
         border-bottom: c.$underline-styling;
       }
 
@@ -47,9 +70,8 @@
       }
 
       &__btn {
-        @include m.button;
+        @include btn.button;
         padding: 15px;
-        font-size: 17px;
         background-color: c.$grey-color;
 
         &__link {
@@ -58,7 +80,7 @@
         }
       }
 
-      @include m.button-hover;
+      @include btn.button-hover;
     }
 
     .carousel .control-next.control-arrow:before {

@@ -14,7 +14,7 @@ export const ProjectItem = () => {
   let ProjectHtml = projects.projects.map((project, i) => {
     return (
       <div className="project" key={project.id}>
-        <h2 className="project__name">{project.name}</h2>
+        <h3 className="project__name">{project.name}</h3>
         <div className="project__imgContainer">
           <img
             className="project__imgContainer__img"

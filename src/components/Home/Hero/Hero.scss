@@ -1,6 +1,6 @@
 @use "./../../../styling/colors" as c;
 @use "./../../../styling/variables" as v;
-@use "./../../../styling/breakpoints" as b;
+@use "./../../../styling/breakpoint" as b;
 @use "./../../../styling/mixins" as m;
 @use "./../../../styling/fonts" as f;
 
@@ -9,15 +9,15 @@
   color: c.$text-color;
   display: flex;
   justify-content: center;
-  align-items: center;
 
   &__name {
     position: absolute;
     z-index: 2;
     font-family: "Lora", serif;
     font-weight: lighter;
-    font-size: f.$heading-smal;
-    top: 130px;
+    font-size: f.$heading-small;
+    top: 35px;
+    text-align: center;
 
     @include b.medium {
       font-size: f.$heading-large;
@@ -48,14 +48,17 @@
   &__webb {
     position: absolute;
     z-index: 2;
-    font-size: f.$education-size-smal;
+    font-size: f.$education-title-small;
     text-transform: uppercase;
-    top: 520px;
+    top: 490px;
     color: c.$my-pop-color;
+    width: 60%;
+    text-align: center;
 
     @include b.medium {
       top: 556px;
-      font-size: f.$education-size-large;
+      font-size: f.$education-title-large;
+      width: 100%;
     }
   }
 }

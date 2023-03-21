@@ -1,11 +1,10 @@
-import './Cv.scss';
+import "./Cv.scss";
 
 export const MyCv = () => {
-
-    return(
-        <section className='myCv'>
-            <h1 className='myCv__title'>My resume</h1>
-            <div className='myCv__png'></div>
-        </section>
-    );
-}
+  return (
+    <section className="myCv">
+      <h2 className="myCv__title">My resume</h2>
+      <div className="myCv__png"></div>
+    </section>
+  );
+};

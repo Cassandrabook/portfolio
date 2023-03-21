@@ -1,6 +1,6 @@
 @use "./../../styling/colors" as c;
 @use "./../../styling/variables" as v;
-@use "./../../styling/breakpoints" as b;
+@use "./../../styling/breakpoint" as b;
 @use "./../../styling/mixins" as m;
 @use "./../../styling/fonts" as f;
 
@@ -11,12 +11,16 @@
 
   &__title {
     color: c.$text-color;
-    font-size: f.$h2-title-smal;
-    font-family: "Lora", serif;
+    font-size: f.$h2-small;
+    text-align: center;
     border-bottom: c.$underline-styling;
+    width: 350px;
+    margin: 0;
 
     @include b.medium {
-      font-size: f.$h2-title-large;
+      font-size: f.$h2-large;
+      width: 550px;
+      margin: 2rem;
     }
   }
 

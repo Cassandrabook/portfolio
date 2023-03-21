@@ -1,6 +1,5 @@
 @use "./../../styling/colors" as c;
-@use "./../../styling/variables" as v;
-@use "./../../styling/breakpoints" as b;
+@use "./../../styling/breakpoint" as b;
 @use "./../../styling/fonts" as f;
 @use "./../../styling/mixins" as m;
 
@@ -25,7 +24,7 @@
   }
 
   p {
-    font-size: f.$paragraph-font-size-smal;
+    font-size: f.$paragraph-font-size-small;
   }
 
   &__skills {
@@ -37,7 +36,7 @@
 
       li {
         padding: 3px;
-        font-size: f.$paragraph-font-size-smal;
+        font-size: f.$paragraph-font-size-small;
 
         @include b.medium {
           padding: 3px 30px;
@@ -58,10 +57,10 @@
     }
     .git,
     .insta {
-      font-size: 40px;
+      font-size: f.$icon-size;
     }
     .linkedin {
-      font-size: 52px;
+      font-size: f.$linkedin-size;
     }
   }
 }

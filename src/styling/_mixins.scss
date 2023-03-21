@@ -1,5 +1,4 @@
-@use "./breakpoints" as b;
-@use "./fonts" as f;
+@use "./breakpoint" as b;
 @use "./colors" as c;
 @use "./variables" as v;
 
@@ -52,20 +51,4 @@
 @mixin bg-img-position {
   background-position: center;
   background-size: cover;
-}
-
-@mixin button {
-  border-radius: 30px;
-  border: 2px solid c.$text-color;
-  cursor: pointer;
-  transition: all ease 0.5s;
-  color: c.$text-color;
-}
-
-@mixin button-hover {
-  &__btn:hover {
-    color: c.$my-pop-color;
-    font-size: 18px;
-    border: 2px solid c.$my-pop-color;
-  }
 }

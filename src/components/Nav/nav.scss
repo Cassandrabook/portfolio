@@ -1,6 +1,6 @@
 @use "./../../styling/colors" as c;
-@use "./../../styling/variables" as v;
-@use "./../../styling/breakpoints" as b;
+@use "./../../styling/breakpoint" as b;
+@use "./../../styling/fonts" as f;
 
 .navbar {
   width: 100%;
@@ -13,7 +13,7 @@
     display: flex;
     gap: 50px;
     margin-right: 50px;
-    font-size: 20px;
+    font-size: f.$nav-fontsize;
   }
 
   &__content {
@@ -24,6 +24,6 @@
 
   &__content:hover {
     color: c.$my-pop-color;
-    font-size: 22px;
+    font-size: f.$nav-hover;
   }
 }

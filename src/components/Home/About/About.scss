@@ -1,6 +1,5 @@
 @use "./../../../styling/colors" as c;
-@use "./../../../styling/variables" as v;
-@use "./../../../styling/breakpoints" as b;
+@use "./../../../styling/breakpoint" as b;
 @use "./../../../styling/fonts" as f;
 @use "./../../../styling/mixins" as m;
 
@@ -11,13 +10,13 @@
   &__title {
     margin: 0 auto;
     text-align: center;
-    font-size: f.$heading-smal;
+    font-size: f.$h2-small;
     border-bottom: c.$underline-styling;
     max-width: 350px;
 
     @include b.medium {
-      font-size: f.$heading-large;
-      max-width: 620px;
+      font-size: f.$h2-large;
+      max-width: 520px;
     }
   }
 
@@ -43,7 +42,7 @@
 
   &__image:hover {
     @include b.medium {
-      box-shadow: 0px 0px 50px rgba(180, 180, 180, 0.745);
+      box-shadow: c.$image-hover;
       width: 420px;
       height: 420px;
     }
@@ -52,7 +51,7 @@
   &__text-container {
     p {
       text-align: center;
-      font-size: f.$paragraph-font-size-smal;
+      font-size: f.$paragraph-font-size-small;
       line-height: 1.7rem;
 
       @include b.medium {
