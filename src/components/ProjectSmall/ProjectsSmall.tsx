@@ -41,6 +41,7 @@ export const Projects = () => {
   return (
     <>
       <section className="myProjects">
+        <h2 className="myProjects__title">My projects</h2>
         <div className="myProjects__projects">{ProductCardHtml}</div>
       </section>
     </>

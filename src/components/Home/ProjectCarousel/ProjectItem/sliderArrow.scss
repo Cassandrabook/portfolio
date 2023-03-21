@@ -4,31 +4,30 @@
 @use "./../../../../styling/fonts" as f;
 @use "./../../../../styling/mixins" as m;
 
-.carousel .control-next.control-arrow:before {
-  border-left: 15px solid c.$my-pop-color;
-  margin-right: 200px;
-  transition: all ease 0.5s;
-  background-color: transparent;
-}
+// .carousel .control-next.control-arrow:before {
+//   border-left: 15px solid c.$my-pop-color;
+//   margin-right: 200px;
+//   transition: all ease 0.5s;
+//   background-color: transparent;
+// }
 
-.carousel .control-arrow:before,
-.carousel.carousel-slider .control-arrow:before {
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-  background-color: transparent;
-}
+// .carousel .control-arrow:before,
+// .carousel.carousel-slider .control-arrow:before {
+//   border-top: 15px solid transparent;
+//   border-bottom: 15px solid transparent;
+//   background-color: transparent;
+// }
 
 .carousel .control-arrow,
 .carousel.carousel-slider .control-arrow {
   opacity: 1;
-  background-color: transparent;
 }
 
-.carousel .control-prev.control-arrow:before {
-  border-right: 15px solid c.$my-pop-color;
-  margin-left: 200px;
-  background-color: none;
-}
+// .carousel .control-prev.control-arrow:before {
+//   border-right: 15px solid c.$my-pop-color;
+//   margin-left: 200px;
+//   background-color: none;
+// }
 
 .carousel .carousel-status {
   display: none;
@@ -36,4 +35,25 @@
 
 .carousel.carousel-slider .control-arrow:hover {
   background-color: transparent;
+}
+.carousel .control-prev.control-arrow:before {
+  content: "";
+  border: solid c.$my-pop-color;
+  border-width: 0 4px 4px 0;
+  margin-left: 200px;
+  display: inline-block;
+  padding: 14px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.carousel .control-next.control-arrow:before {
+  content: "";
+  border: solid c.$my-pop-color;
+  border-width: 0 4px 4px 0;
+  margin-right: 200px;
+  display: inline-block;
+  padding: 14px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 }

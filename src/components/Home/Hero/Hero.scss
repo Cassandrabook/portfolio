@@ -16,11 +16,11 @@
     z-index: 2;
     font-family: "Lora", serif;
     font-weight: lighter;
-    font-size: f.$heading-font-size-smal;
+    font-size: f.$heading-smal;
     top: 130px;
 
     @include b.medium {
-      font-size: f.$heading-font-size-large;
+      font-size: f.$heading-large;
       top: 93px;
     }
   }

@@ -1,29 +1,29 @@
-@use './../../styling/colors' as c;
-@use './../../styling/variables' as v;
-@use './../../styling/breakpoints' as b;
+@use "./../../styling/colors" as c;
+@use "./../../styling/variables" as v;
+@use "./../../styling/breakpoints" as b;
 
-.navbar{
-    width: 100%;
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  height: 100px;
+
+  li {
+    list-style: none;
     display: flex;
-    justify-content: end;
-    height: 100px;
+    gap: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+  }
 
-    li{
-        list-style: none;
-        display: flex;
-        gap: 50px;
-        margin-right: 50px;
-        font-size: 20px;
-    }
+  &__content {
+    color: c.$text-color;
+    text-decoration: none;
+    transition: all ease 0.3s;
+  }
 
-    &__content{
-        color: c.$text-color;
-        text-decoration: none;
-        transition: all ease 0.3s;
-    }
-
-    &__content:hover{
-        color: c.$my-pop-color;
-        font-size: 22px;
-    }
+  &__content:hover {
+    color: c.$my-pop-color;
+    font-size: 22px;
+  }
 }

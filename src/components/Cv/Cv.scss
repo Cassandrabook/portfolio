@@ -1,36 +1,36 @@
-@use './../../styling/colors' as c;
-@use './../../styling/variables' as v;
-@use './../../styling/breakpoints' as b;
-@use './../../styling/mixins' as m;
-@use './../../styling/fonts' as f;
+@use "./../../styling/colors" as c;
+@use "./../../styling/variables" as v;
+@use "./../../styling/breakpoints" as b;
+@use "./../../styling/mixins" as m;
+@use "./../../styling/fonts" as f;
 
-.myCv{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.myCv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    &__title{
-        color: c.$text-color;
-        font-size: f.$h1-size-smal;
-        font-family: 'Lora', serif;
-        border-bottom: c.$underline-styling;
+  &__title {
+    color: c.$text-color;
+    font-size: f.$h2-title-smal;
+    font-family: "Lora", serif;
+    border-bottom: c.$underline-styling;
 
-        @include b.medium{
-            font-size:f.$h1-size-large;
-        }
+    @include b.medium {
+      font-size: f.$h2-title-large;
     }
+  }
 
-    &__png{
-        background-image: v.$resume-pic;
-        @include m.bg-img-position;
-        width: 360px;
-        height: 500px;
-        box-shadow: c.$cv-shadow;
-        margin: 2rem;
+  &__png {
+    background-image: v.$resume-pic;
+    @include m.bg-img-position;
+    width: 360px;
+    height: 500px;
+    box-shadow: c.$cv-shadow;
+    margin: 2rem;
 
-        @include b.medium{
-            height: 1100px;
-            width: 800px;
-        }
+    @include b.medium {
+      height: 1100px;
+      width: 800px;
     }
+  }
 }

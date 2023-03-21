@@ -6,16 +6,16 @@
 
 .project-title {
   margin: 0 auto;
-  color: white;
+  color: c.$text-color;
   text-align: center;
-  font-size: f.$heading-font-size-large;
+  font-size: f.$heading-large;
   border-bottom: c.$underline-styling;
   width: 700px;
   margin-bottom: 150px;
 }
 
 .project {
-  color: white;
+  color: c.$text-color;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -41,19 +41,11 @@
   }
 
   &__btn {
+    @include m.button;
     padding: 20px;
-    border-radius: 30px;
     font-size: 17px;
-    background-color: black;
-    border: 1px solid white;
-    cursor: pointer;
-    transition: all ease 0.5s;
-    color: white;
+    background-color: c.$background-color;
   }
 
-  &__btn:hover {
-    color: c.$my-pop-color;
-    font-size: 18px;
-    border: 1px solid c.$my-pop-color;
-  }
+  @include m.button-hover;
 }

@@ -4,7 +4,7 @@ export const About = () => {
   return (
     <>
       <section className="about" id="about">
-        <h1 className="about__title">About me</h1>
+        <h2 className="about__title">About me</h2>
         <div className="about__container">
           <div className="about__image"></div>
           <div className="about__text-container">

@@ -25,6 +25,14 @@ export const projects: IProjects = {
   projects: [
     {
       id: 1,
+      name: "76 Gastronome",
+      description: "API Movies omdb",
+      imgWebb: restaurantWebb,
+      imgMob: restaurantMob,
+      repo: "https://github.com/idadanielsson/Restaurant",
+    },
+    {
+      id: 2,
       name: "Diamonds for you",
       description:
         "Ett grupparbete på tre personer, där vi skapade en helt fungerande webbshop. Projektet gick också ut på att vi skulle arbeta agilt och agera som ett utvecklingsteam, där läraren agerade projektägare. Vi arbetade med sprintar och backlog, samt en lista på krav.",
@@ -33,7 +41,7 @@ export const projects: IProjects = {
       repo: "https://github.com/Cassandrabook/Diamonds-for-you",
     },
     {
-      id: 2,
+      id: 3,
       name: "Zoo Pawsible",
       description: "React Zoo",
       imgWebb: zooWebb,
@@ -41,21 +49,13 @@ export const projects: IProjects = {
       repo: "https://github.com/Cassandrabook/My-zoo",
     },
     {
-      id: 3,
+      id: 4,
       name: "Movies",
       description:
         "Detta projekt var från början en övningsuppgift vi fick i skolan för att göra ett API anrop och presentera resultatet i webbläsaren. Jag jobbade vidare på uppgiften och skapade en webbshop för filmer som man kan köpa.",
       imgWebb: movieWebb,
       imgMob: zooMob,
       repo: "https://github.com/Cassandrabook/movie-webbshop",
-    },
-    {
-      id: 4,
-      name: "76 Gastronome",
-      description: "API Movies omdb",
-      imgWebb: restaurantWebb,
-      imgMob: restaurantMob,
-      repo: "https://github.com/idadanielsson/Restaurant",
     },
     {
       id: 5,

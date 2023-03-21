@@ -37,7 +37,7 @@ export const ProjectItem = () => {
   return (
     <>
       <section className="myProjects-container">
-        <h1 className="project-title">My projects</h1>
+        <h2 className="project-title">My projects</h2>
         <Carousel>{ProjectHtml}</Carousel>
       </section>
     </>

@@ -11,12 +11,12 @@
   &__title {
     margin: 0 auto;
     text-align: center;
-    font-size: f.$heading-font-size-smal;
+    font-size: f.$heading-smal;
     border-bottom: c.$underline-styling;
     max-width: 350px;
 
     @include b.medium {
-      font-size: f.$heading-font-size-large;
+      font-size: f.$heading-large;
       max-width: 620px;
     }
   }
