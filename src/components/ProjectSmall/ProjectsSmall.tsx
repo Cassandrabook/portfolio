@@ -22,6 +22,16 @@ export const Projects = () => {
             src={project.imgMob}
             alt={project.name}
           />
+          <img
+            className="myProjects__projects__container__imgContainer__img"
+            src={project.imgWebb2}
+            alt={project.name}
+          />
+          <img
+            className="myProjects__projects__container__imgContainer__img"
+            src={project.imgMob2}
+            alt={project.name}
+          />
         </Carousel>
         <p className="myProjects__projects__container__desc">
           {project.description}
