@@ -5,7 +5,11 @@
 
 .about {
   color: c.$text-color;
-  padding-bottom: 4em;
+  padding: 0px 2rem 6rem 2rem;
+
+  @include b.medium {
+    padding: 4rem;
+  }
 
   &__title {
     margin: 0 auto;

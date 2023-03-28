@@ -3,6 +3,9 @@
 @use "./../../styling/fonts" as f;
 
 .navbar {
+  position: absolute;
+  width: 100%;
+  z-index: 3;
   @include b.medium-nav {
     transform: translateX(-100%);
     transition: ease-in 0.4s;
@@ -44,16 +47,16 @@
 }
 
 .navActive {
-  position: absolute;
+  background-color: c.$background-color;
   width: 100%;
-  z-index: 1;
+  transform: translateX(0%);
+  transition: ease-out 0.4s;
+  position: absolute;
+  z-index: 3;
 
-  @include b.medium-nav {
-    background-color: c.$background-color;
-    width: 100%;
-    transform: translateX(0%);
-    transition: ease-out 0.4s;
+  @include b.medium {
     position: absolute;
+    width: 100%;
     z-index: 3;
   }
 }
