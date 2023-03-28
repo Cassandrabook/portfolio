@@ -3,27 +3,171 @@
 @use "./../../styling/fonts" as f;
 
 .navbar {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  height: 100px;
+  @include b.medium-nav {
+    transform: translateX(-100%);
+    transition: ease-in 0.4s;
+  }
 
-  li {
-    list-style: none;
+  &__menu {
     display: flex;
-    gap: 50px;
-    margin-right: 50px;
-    font-size: f.$nav-fontsize;
+    justify-content: center;
+    text-align: center;
+
+    @include b.medium {
+      justify-content: end;
+      margin-right: 50px;
+    }
   }
 
-  &__content {
-    color: c.$text-color;
-    text-decoration: none;
-    transition: all ease 0.3s;
-  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-size: 20px;
+    margin-bottom: 50px;
 
-  &__content:hover {
-    color: c.$my-pop-color;
-    font-size: f.$nav-hover;
+    @include b.medium {
+      flex-direction: row;
+    }
+
+    &__content {
+      text-decoration: none;
+      color: c.$text-color;
+      transition: all ease 0.3s;
+    }
+
+    &__content:hover {
+      color: c.$my-pop-color;
+      font-size: f.$nav-hover;
+    }
   }
 }
+
+.navActive {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+
+  @include b.medium-nav {
+    background-color: c.$background-color;
+    width: 100%;
+    transform: translateX(0%);
+    transition: ease-out 0.4s;
+    position: absolute;
+    z-index: 3;
+  }
+}
+
+.hamburger-react {
+  display: block;
+
+  @include b.medium {
+    display: none;
+  }
+}
+
+// .navbar {
+//   display: none;
+
+//   @include b.medium {
+//     display: block;
+//     position: absolute;
+//     z-index: 4;
+//     top: 0;
+//   }
+
+//   &__menu {
+//     display: flex;
+//     justify-content: start;
+
+//     @include b.medium {
+//       justify-content: end;
+//     }
+//   }
+
+//   &__list {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 20px;
+//     font-size: f.$nav-fontsize;
+
+//     @include b.medium {
+//       flex-direction: row;
+//     }
+
+//     &__content {
+//       text-decoration: none;
+//       color: c.$text-color;
+//     }
+//   }
+// }
+
+// .navActive {
+//   background-color: #4f81b4e4;
+//   width: 200px;
+//   transform: translateX(0%);
+//   transition: ease-out 0.4s;
+//   position: absolute;
+
+//   @include b.medium {
+//     position: absolute;
+//     width: 100%;
+//     z-index: 4;
+//   }
+// }
+
+// .navbar {
+//   transform: translateX(-100%);
+//   transition: ease-in 0.4s;
+
+//   @include b.medium {
+//     position: absolute;
+//     width: 100%;
+//     z-index: 1;
+//   }
+
+//   li {
+//     list-style: none;
+//     display: flex;
+//     gap: 50px;
+//     margin-right: 50px;
+//     font-size: f.$nav-fontsize;
+//   }
+
+//   &__content {
+//     color: c.$text-color;
+//     text-decoration: none;
+//     transition: all ease 0.3s;
+//   }
+
+//   &__content:hover {
+//     color: c.$my-pop-color;
+//     font-size: f.$nav-hover;
+//   }
+// }
+
+// // .navbar {
+// //   position: absolute;
+// //   width: 100%;
+// //   z-index: 1;
+// // }
+// // @media screen and (max-width: 768px) {
+// //   .navbar {
+// //     transform: translateX(-100%);
+// //     transition: ease-in 0.4s;
+// //   }
+// // }
+
+// .navActive {
+//   background-color: #4f81b4e4;
+//   width: 200px;
+//   transform: translateX(0%);
+//   transition: ease-out 0.4s;
+//   position: absolute;
+
+//   @include b.medium {
+//     position: absolute;
+//     width: 100%;
+//     z-index: 1;
+//   }
+// }
