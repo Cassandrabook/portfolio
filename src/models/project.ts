@@ -2,11 +2,14 @@ import diamondWebb from "./../assets/Webbshop1.svg";
 import diamondMob from "./../assets/webbshop-mobil.svg";
 import diamondWebb2 from "./../assets/diamonds-webb.svg";
 import diamondMob2 from "./../assets/diamond-mob.svg";
-import zooWebb from "./../assets/Webbshop2.svg";
+import zooWebb from "./../assets/zoo-web.svg";
 import zooMob from "./../assets/webbshop-mobil-2.svg";
 import zooMob2 from "./../assets/zoo-mob.svg";
 import zooWebb2 from "./../assets/zoo-webb.svg";
 import movieWebb from "./../assets/Webbshop3.svg";
+import movieWebb2 from "./../assets/movie-web2.svg";
+import movieMob from "./../assets/movie-mob.svg";
+
 import doneDesignMob from "./../assets/webbshop-mobil-5.svg";
 import doneDesignWebb from "./../assets/Webbshop5.svg";
 import doneDesignWebb2 from "./../assets/given-design-webb.svg";
@@ -72,8 +75,8 @@ export const projects: IProjects = {
       description:
         "Detta projekt var från början en övningsuppgift vi fick i skolan för att göra ett API anrop och presentera resultatet i webbläsaren. Jag jobbade vidare på uppgiften och skapade en webbshop för filmer som man kan köpa.",
       imgWebb: movieWebb,
-      imgMob: zooMob,
-      imgWebb2: "",
+      imgMob: movieMob,
+      imgWebb2: movieWebb2,
       imgMob2: "",
       repo: "https://github.com/Cassandrabook/movie-webbshop",
     },
