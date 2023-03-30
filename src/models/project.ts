@@ -9,7 +9,7 @@ import zooWebb2 from "./../assets/zoo-webb.svg";
 import movieWebb from "./../assets/Webbshop3.svg";
 import movieWebb2 from "./../assets/movie-web2.svg";
 import movieMob from "./../assets/movie-mob.svg";
-
+import movieMob2 from "./../assets/movie-mob2.svg";
 import doneDesignMob from "./../assets/webbshop-mobil-5.svg";
 import doneDesignWebb from "./../assets/Webbshop5.svg";
 import doneDesignWebb2 from "./../assets/given-design-webb.svg";
@@ -40,7 +40,7 @@ export const projects: IProjects = {
       id: 1,
       name: "76 Gastronome",
       description:
-        "En grupparbete på tre personer. Syftet med projektet var att skapa en restaurang via ett API. Tyngden på uppgiften var att skapa en bokningsfunktionalitet för att kunna boka bord på restaurangen, samt en admin sida för att kunna hantera, ändra och ta bort bokningar.",
+        "A group assignment of three people. The purpose of the project was to create a restaurant and get the restaurant id through an API. The weight of the project was to create a booking functionality, where customers can book a table at the restaurant at a specific date, time and select number of guests. We also had to create an admin page to manage, change and delete bookings.",
       imgWebb: restaurantWebb,
       imgMob: restaurantMob,
       imgWebb2: restaurantWebb2,
@@ -51,7 +51,7 @@ export const projects: IProjects = {
       id: 2,
       name: "Diamonds for you",
       description:
-        "Ett grupparbete på tre personer, där vi skapade en helt fungerande webbshop. Projektet gick också ut på att vi skulle arbeta agilt och agera som ett utvecklingsteam, där läraren agerade projektägare. Vi arbetade med sprintar och backlog, samt en lista på krav.",
+        "A group assignment of three people, where the project was to create a fully functional webbshop. We where also suposed to work in an agile project as a development team, where the teacher acted as the project owner. We worked with sprints, a backlog, and a list of requirements.",
       imgWebb: diamondWebb,
       imgMob: diamondMob,
       imgWebb2: diamondWebb2,
@@ -62,7 +62,7 @@ export const projects: IProjects = {
       id: 3,
       name: "Zoo Pawsible",
       description:
-        "En inlämningsuppgift där vi skulle skapa ett zoo genom att hämta djuren och information om dem från ett API, samt presentera djuren i webbläsaren. Utmaningen med uppgiften var att kunna mata djuren var tredje timme, samt att matknappen inte längre ska gå att klicka på. En till utmaning var att man skulle se ifall djuret var mätt eller hungrig.",
+        "A home assignment where we created a zoo by retrieving all animals and information about them from an API, and present them on the start page. The challenge with the task was to be able to feed the animals every three hours through a button, that’s suposed to be disabled when the animal has been feed. Another challenge was to be able to see if the animals was hungry och full on the start page.",
       imgWebb: zooWebb,
       imgMob: zooMob,
       imgWebb2: zooWebb2,
@@ -73,18 +73,18 @@ export const projects: IProjects = {
       id: 4,
       name: "Movies",
       description:
-        "Detta projekt var från början en övningsuppgift vi fick i skolan för att göra ett API anrop och presentera resultatet i webbläsaren. Jag jobbade vidare på uppgiften och skapade en webbshop för filmer som man kan köpa.",
+        "This is a project I have been working with on the side of my school assignments. To retrieve all the movies I have done an API call to get all movies, with imagUrl, title, description, price m.m. I have created a movie webshop where you can buy a selection of movies.",
       imgWebb: movieWebb,
       imgMob: movieMob,
       imgWebb2: movieWebb2,
-      imgMob2: "",
+      imgMob2: movieMob2,
       repo: "https://github.com/Cassandrabook/movie-webbshop",
     },
     {
       id: 5,
       name: "Given Design",
       description:
-        "Detta var vår första inlämningsuppgift i Frontendutvecklingskursen, där vi  skulle återskapa och likna en färdig design utifrån endast bilder och videos. Uppgiften gick ut på att visa våra kunskaper i HTML och CSS.",
+        "This was our first home assignment in the course Frontend development. We had to recreate a given design, where we only had photos and videos for help. The tasks purpose was to show our skills in only HTML and CSS.",
       imgWebb: doneDesignWebb,
       imgMob: doneDesignMob,
       imgWebb2: doneDesignWebb2,

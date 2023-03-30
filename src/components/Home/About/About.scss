@@ -65,4 +65,10 @@
       }
     }
   }
+
+  a {
+    text-decoration: none;
+    color: c.$text-color;
+    text-decoration: underline 0.5px solid c.$text-color;
+  }
 }

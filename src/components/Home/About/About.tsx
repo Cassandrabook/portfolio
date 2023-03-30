@@ -12,7 +12,11 @@ export const About = () => {
               Hello and welcome to my portfolio! My name is Cassandra Book and
               I’m 27 years old. I live in Täby with my partner and our two dogs.
               I'm currently looking for an exciting company to have my
-              LIA-internship at in fall 2023.
+              LIA-internship at in fall 2023. If you know someone or working for
+              a company that's looking for students, contact me at&nbsp;
+              <a href="mailto: cassandra.book@medieinstitutet.se.">
+                cassandra.book@medieinstitutet.se
+              </a>
             </p>
             <p>
               I'm a web developer student specializing in e-commerce at

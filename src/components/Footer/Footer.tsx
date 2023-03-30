@@ -28,8 +28,14 @@ export const Footer = () => {
       <section className="footer">
         <div className="footer__contact">
           <h3>Get in touch</h3>
-          <p>Cassandra.book@medieinstitutet.se</p>
-          <p>0706 - 10 83 11</p>
+          <p>
+            <a href="mailto: cassandra.book@medieinstitutet.se.">
+              cassandra.book@medieinstitutet.se
+            </a>
+          </p>
+          <p>
+            <a href="tel: +46706108311">0706 - 10 83 11</a>
+          </p>
           <p>Täby, 183 63</p>
         </div>
         <div className="footer__skills">

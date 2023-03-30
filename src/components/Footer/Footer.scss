@@ -27,6 +27,11 @@
     font-size: f.$paragraph-font-size-small;
   }
 
+  a {
+    text-decoration: none;
+    color: c.$text-color;
+  }
+
   &__skills {
     ul {
       columns: 2;
