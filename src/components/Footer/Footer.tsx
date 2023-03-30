@@ -29,8 +29,8 @@ export const Footer = () => {
         <div className="footer__contact">
           <h3>Get in touch</h3>
           <p>
-            <a href="mailto: cassandra.book@medieinstitutet.se">
-              cassandra.book@medieinstitutet.se
+            <a href="mailto: cassandraabook@gmail.com">
+              cassandraabook@gmail.com
             </a>
           </p>
           <p>

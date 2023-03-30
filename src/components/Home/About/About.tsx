@@ -14,8 +14,8 @@ export const About = () => {
               I'm currently looking for an exciting company to have my
               LIA-internship at in fall 2023. If you know someone or working for
               a company that's looking for students, contact me at&nbsp;
-              <a href="mailto: cassandra.book@medieinstitutet.se">
-                cassandra.book@medieinstitutet.se
+              <a href="mailto: cassandraabook@gmail.com">
+                cassandraabook@gmail.com
               </a>
             </p>
             <p>
