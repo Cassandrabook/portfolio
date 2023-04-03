@@ -4,8 +4,14 @@
   }
 }
 
-@mixin medium-nav {
-  @media screen and (max-width: 768px) {
+@mixin large {
+  @media screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin large-nav {
+  @media screen and (max-width: 992px) {
     @content;
   }
 }
