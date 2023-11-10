@@ -4,11 +4,13 @@
 @use "./../../../styling/mixins" as m;
 
 .about {
+  margin-top: 3rem;
   color: c.$text-color;
   padding: 0px 2rem 6rem 2rem;
 
   @include b.medium {
     padding: 4rem;
+    margin: 0;
   }
 
   &__title {

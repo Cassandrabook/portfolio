@@ -10,24 +10,38 @@ export const About = () => {
           <div className="about__text-container">
             <p>
               Hello and welcome to my portfolio! My name is Cassandra Book and
-              I’m 27 years old. I live in Täby with my partner and our two dogs.
-              I'm currently looking for an exciting company to have my
-              LIA-internship at in fall 2023. If you know someone or working for
-              a company that's looking for students, contact me at&nbsp;
+              I’m 27 years old. I'm an experienced web developer with a solid
+              foundation in both front- and back-end development. This has
+              provided me with experience in HTML, CSS, JavaScript, TypeScript,
+              React, APIs, SQL, and databases, as well as a good understanding
+              of responsive design and user-friendly websites.
+            </p>
+            <p>
+              My experience extends to e-commerce, particularly through
+              Wordpress and WooCommerce, allowing me to craft engaging online
+              shopping experiences. I'm deeply committed to refining my skills
+              through hands-on projects and continuous education. I eagerly
+              embrace new challenges and technologies, constantly staying
+              abreast of the latest trends in the tech world.
+            </p>
+            <p>
+              Beyond my technical skills, I have a keen interest in design,
+              fashion, data, and traveling. My ultimate goal is to evolve into a
+              highly skilled web developer, renowned for my creativity,
+              positivity, and exceptional problem-solving abilities. I thrive in
+              collaborative environments and I'm always ready to contribute
+              innovative ideas to my team.
+            </p>
+            <p>
+              I believe that a great web developer not only writes clean,
+              efficient code but also understands the importance of user
+              experience and interface design. This holistic approach is what
+              drives my passion for web development, and I'm excited to bring my
+              unique blend of skills and enthusiasm to new projects and
+              opportunities. Feel free to contact me at&nbsp;
               <a href="mailto: cassandraabook@gmail.com">
                 cassandraabook@gmail.com
               </a>
-            </p>
-            <p>
-              I'm a web developer student specializing in e-commerce at
-              Medieinstitutet. The program focuses on both frontend and backend
-              that includes HTML, CSS/SCSS, Javascript, Typescript,
-              Database/SQL, PHP, API, GIT, React and Agile methods.
-            </p>
-            <p>
-              I have an interest in design, tech, data and coding. The goal is
-              to become a skilled web developer. I'm a positive and creative
-              person that like solving problems.
             </p>
           </div>
         </div>

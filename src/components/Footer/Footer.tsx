@@ -12,11 +12,23 @@ export const Footer = () => {
     "React",
     "SQL",
     "Git",
+    "Github",
     "API",
     "PHP",
+    "Databases",
+    "Node.js",
+    "Express",
+    "Socket.io",
+    "Wordpress",
+    "WooCommerce",
     "Photoshop",
     "Canva",
+    "Figma",
     "Adobe XD",
+    "Notion",
+    "Jira",
+    "Azure",
+    "Tableau",
   ];
 
   let html = skills.map((p, i) => {
@@ -34,9 +46,9 @@ export const Footer = () => {
             </a>
           </p>
           <p>
-            <a href="tel: +46706108311">0706 - 10 83 11</a>
+            <a href="tel: +46706108311">+46706 - 10 83 11</a>
           </p>
-          <p>Täby, 183 63</p>
+          <p>Vasastan, 113 62</p>
         </div>
         <div className="footer__skills">
           <h3>Skills</h3>

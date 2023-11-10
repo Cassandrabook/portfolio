@@ -4,17 +4,18 @@
 
 @mixin button {
   border-radius: 30px;
-  border: v.$btn-border c.$text-color;
+  border: v.$btn-border c.$border-color;
+  background-color: c.$background-color;
   font-size: f.$button-size;
   cursor: pointer;
-  transition: all ease 0.5s;
-  color: c.$text-color;
+  transition: all ease 0.3s;
+  color: c.$border-color;
 }
 
 @mixin button-hover {
   &__btn:hover {
-    color: c.$my-pop-color;
-    font-size: f.$btn-size-hover;
+    color: c.$light-color;
     border: v.$btn-border c.$my-pop-color;
+    background-color: c.$my-pop-color;
   }
 }

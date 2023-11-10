@@ -15,7 +15,7 @@
 }
 .carousel .control-prev.control-arrow:before {
   content: "";
-  border: solid c.$my-pop-color;
+  border: solid c.$grey-color;
   border-width: 0 4px 4px 0;
   margin-left: 20px;
   display: inline-block;
@@ -30,7 +30,7 @@
 
 .carousel .control-next.control-arrow:before {
   content: "";
-  border: solid c.$my-pop-color;
+  border: solid c.$grey-color;
   border-width: 0 4px 4px 0;
   margin-right: 20px;
   display: inline-block;

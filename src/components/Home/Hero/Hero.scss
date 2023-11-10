@@ -5,11 +5,18 @@
 @use "./../../../styling/fonts" as f;
 
 .portfolio {
-  height: 95vh;
+  height: 100vh;
   color: c.$text-color;
   display: flex;
   justify-content: center;
   width: 100%;
+  background-image: v.$header-pic;
+  background-size: cover;
+  background-position: center;
+
+  @include b.large {
+    background-position: unset;
+  }
 
   &__name {
     position: absolute;
@@ -17,63 +24,66 @@
     font-family: "Lora", serif;
     font-weight: lighter;
     font-size: f.$heading-small;
-    top: 35px;
-    text-align: center;
+    top: 0px;
+    color: c.$light-color;
+    right: 30px;
+    text-align: end;
 
     @include b.medium {
+      text-align: start;
+      right: 0;
+      width: 20%;
       font-size: f.$heading-medium;
       top: 12%;
     }
 
     @include b.large {
       font-size: f.$heading-large;
-      top: 93px;
+      top: 0;
+      left: 50%;
     }
   }
 
-  &__picture {
-    background-image: v.$header-pic;
-    background-position: center;
-    background-size: cover;
-    box-shadow: c.$image-shadow;
-    height: 250px;
-    width: 350px;
-    position: absolute;
-    z-index: 1;
-    top: 260px;
+  // &__picture {
+  //   background-image: v.$header-pic;
+  //   background-position: center;
+  //   background-size: cover;
+  //   box-shadow: c.$image-shadow;
+  //   height: 250px;
+  //   width: 350px;
+  //   position: absolute;
+  //   z-index: 1;
+  //   top: 260px;
 
-    @include b.medium {
-      height: 300px;
-      width: 480px;
-      top: 30%;
-    }
+  //   @include b.medium {
+  //     height: 300px;
+  //     width: 480px;
+  //     top: 30%;
+  //   }
 
-    @include b.large {
-      top: 460px;
-      transform: v.$pic-rotate;
-      border-radius: 0;
-    }
-  }
+  //   @include b.large {
+  //     top: 460px;
+  //     transform: v.$pic-rotate;
+  //     border-radius: 0;
+  //   }
+  // }
 
   &__webb {
     position: absolute;
     z-index: 2;
-    font-size: f.$education-title-small;
+    font-size: f.$education-title;
     text-transform: uppercase;
-    top: 490px;
+    top: 230px;
+    left: 50%;
     color: c.$my-pop-color;
     width: 45%;
-    text-align: center;
-
-    @include b.medium {
-      top: 55%;
-      font-size: f.$education-title-medium;
-    }
+    text-align: end;
 
     @include b.large {
-      top: 556px;
-      font-size: f.$education-title-large;
-      width: 100%;
+      text-align: center;
+      top: 420px;
+      font-size: f.$education-title;
+      left: 40%;
     }
   }
 }
