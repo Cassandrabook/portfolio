@@ -18,6 +18,10 @@ import restaurantMob from "./../assets/restaurant-mobil.svg";
 import restaurantWebb from "./../assets/restaurant.svg";
 import restaurantWebb2 from "./../assets/restaurant3.svg";
 import restaurantMob2 from "./../assets/restaurant-mob2.svg";
+import woocommerceWeb from "./../assets/woocommerce.svg";
+import woocommerceWeb2 from "./../assets/woocommerce-mob.svg";
+import woocommerceMob from "./../assets/woocommerce-shop.svg";
+import woocommerceMob2 from "./../assets/woocommerce-mob-shop.svg";
 
 export interface IProject {
   id: number;
@@ -90,6 +94,17 @@ export const projects: IProjects = {
       imgWebb2: doneDesignWebb2,
       imgMob2: doneDesignMob2,
       repo: "https://github.com/Cassandrabook/done-design",
+    },
+    {
+      id: 6,
+      name: "URBANCHICWEAR",
+      description:
+        "A group assignment where we were to create a fully functioning e-commerce site using WooCommerce with PHP. We were to implement plugins for payment solutions and search functions, and make the website work like a real webshop.",
+      imgWebb: woocommerceWeb,
+      imgMob: woocommerceWeb2,
+      imgWebb2: woocommerceMob,
+      imgMob2: woocommerceMob2,
+      repo: "https://github.com/Cassandrabook/woocommerce",
     },
   ],
 };

@@ -44,30 +44,6 @@
     }
   }
 
-  // &__picture {
-  //   background-image: v.$header-pic;
-  //   background-position: center;
-  //   background-size: cover;
-  //   box-shadow: c.$image-shadow;
-  //   height: 250px;
-  //   width: 350px;
-  //   position: absolute;
-  //   z-index: 1;
-  //   top: 260px;
-
-  //   @include b.medium {
-  //     height: 300px;
-  //     width: 480px;
-  //     top: 30%;
-  //   }
-
-  //   @include b.large {
-  //     top: 460px;
-  //     transform: v.$pic-rotate;
-  //     border-radius: 0;
-  //   }
-  // }
-
   &__webb {
     position: absolute;
     z-index: 2;
